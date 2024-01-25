@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600&family=Montserrat:wght@400;600&family=Roboto+Mono&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  background-color: #000000;
+  color: #f6f6f6;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.cabecalho {
+  padding: 4% 0 0 15%;
+}
+
+.cabecalho__menu {
+  display: flex;
+  gap: 60px;
+}
+
+.cabecalho__menu__link {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #22d4fd;
+  text-decoration: none;
+}
+
+.apresentacao {
+  margin: 8% 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+
+.apresentacao__conteudo {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 615px;
+  margin-bottom: 40px;
+}
+
+.apresentacao__conteudo__titulo {
+  font-size: 28px;
+  font-family: "Roboto Mono", monospace;
+}
+
+.apresentacao__conteudo__titulo__texto {
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.apresentacao__imagem {
+  width: 75%;
+}
+
+.rodape {
+  color: white;
+  padding: 20px;
+  font-family: "Montserrat", sans-serif;
+  margin-top: auto;
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Consulta de mídia para telas médias e grandes (computadores) */
+@media screen and (min-width: 768px) {
+  .apresentacao {
+    flex-direction: row;
+  }
+
+  .apresentacao__conteudo {
+    max-width: 50%;
+  }
+
+  .apresentacao__imagem__perfil {
+    margin-right: 40px;
+  }
+}
+
+/* Consulta de mídia para telas pequenas (celular) ficara responsive com 488px  */
+
+@media screen and (max-width: 488px) {
+  .cabecalho {
+    padding: 8% 0 0 8%;
+  }
+
+  .cabecalho__menu {
+    justify-content: center;
+  }
+
+  .apresentacao {
+    margin: 8% 3%;
+    flex-direction: column-reverse;
+  }
+
+  .apresentacao__conteudo {
+    margin-top: 20px;
+  }
+
+  .apresentacao__conteudo__titulo {
+    font-size: 24px;
+  }
+
+  .apresentacao__conteudo__titulo__texto {
+    font-size: 16px;
+  }
+
+  .apresentacao__imagem {
+    width: 80%;
+  }
+
+  .rodape {
+    padding: 15px;
+  }
+}
