@@ -1,5 +1,6 @@
 # meu-portfolio
 Meu portfólio criado com as aulas da alura + oracle one next education.
+Acesse: https://meu-portfolio-blond-two.vercel.app/
 
 
 
